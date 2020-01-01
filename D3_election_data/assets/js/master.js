@@ -130,7 +130,7 @@ function updateToolTip(circlesGroup, chosenXAxis, chosenYAxis) {
     var toolTip = d3.tip()
         .attr("class", "d3-tip")
         .html(function (d) {
-            return (`District: ${d.district}<br> Rep. ${d.first_name} ${d.last_name} (${d.party[0]})<br> First elected in ${d.first_elected}<br> Results:<br> •District: D: ${d.rvotepercent_house_democrat}% / R: ${d.rvotepercent_house_republican}% <br> •National: D: ${d.votepercent_president2016_democrat}% / R: ${d.votepercent_president2016_republican}%<br> ------------<br>Adult White Pop.: ${d.acs_population_adult_white}%<br> BA degree 25+: ${d.acs_bachelordegree_age25plus}%<br>Non-college whites: ${d.noncollege_white_share}%<br> Median income rank: #${d.acs_medianincome_rank} 0f 435 districts<br>Total votes for Trump: ${d.qvote_president_republican} of ${d.tvotetotal_president} cast<br> Total votes for Clinton: ${d.qvote_president_democrat} of ${d.tvotetotal_president} cast`);
+            return (`District: ${d.district}<br> Rep. ${d.first_name} ${d.last_name} (${d.party[0]})<br> First elected in ${d.first_elected}<br> Results:<br> •District: D: ${d.rvotepercent_house_democrat}% / R: ${d.rvotepercent_house_republican}% <br> •National: D: ${d.votepercent_president2016_democrat}% / R: ${d.votepercent_president2016_republican}%<br> ------------<br>Adult white pop.: ${d.acs_population_adult_white}%<br> BA degree 25+: ${d.acs_bachelordegree_age25plus}%<br>Non-college whites: ${d.noncollege_white_share}%<br> Median income rank: #${d.acs_medianincome_rank} 0f 435 districts<br>Votes for Trump: ${d.qvote_president_republican} of ${d.tvotetotal_president} cast<br>Votes for Clinton: ${d.qvote_president_democrat} of ${d.tvotetotal_president} cast`);
         });
 
     circlesGroup.call(toolTip);
