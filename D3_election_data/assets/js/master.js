@@ -149,7 +149,7 @@ function updateToolTip(circlesGroup, chosenXAxis, chosenYAxis) {
 }
 
 // Retrieve data from the CSV file and execute everything below
-d3.csv("data/data.csv").then(function (data) {
+d3.csv("assets/data/data.csv").then(function (data) {
     // console.log(data);
 
 
