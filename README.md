@@ -1,6 +1,7 @@
 # D3-2016_congressional_data
 
-Please click here to access the interactive visualization:
+Please click link below to access the interactive D3 visualization:
+
 **https://atomazos.github.io/D3-2016_congressional_data/D3_election_data**
 
 
